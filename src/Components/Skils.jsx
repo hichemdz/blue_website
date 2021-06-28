@@ -11,6 +11,11 @@ const Item = ({ name, progress, color }) => {
     const xy = 100;
     const r = 80;
 
+    // const progressVal = (p) => {
+    //     const _p = circumference - (p * circumference / 100)
+    //     setDashoffset(_p)
+
+    // }
     useEffect(() => {
         let p = skil.current.r.baseVal.value * 2 * Math.PI
         setCircumference(Math.round(p))
@@ -19,19 +24,16 @@ const Item = ({ name, progress, color }) => {
     useEffect(() => {
         let count = 0
         const intProgr = setInterval(() => {
-            progressVal(count)
+            const _p = circumference - (count * circumference / 100)
+            setDashoffset(_p)
             if (count >= progress) clearInterval(intProgr);
             count++
             setCount(count)
         }, 100)
 
-    }, [])
+    }, [progress,circumference])
 
-    const progressVal = (p) => {
-        const _p = circumference - (p * circumference / 100)
-        setDashoffset(_p)
 
-    }
 
     return (
         <div className=' space-y- text-white text-center'>

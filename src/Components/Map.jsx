@@ -3,7 +3,8 @@ import React from 'react'
 function Map(props) {
     return (
         <div>
-            <iframe  
+            <iframe
+              title="blida"  
               width="800" 
               height="
               600" 

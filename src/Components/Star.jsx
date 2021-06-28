@@ -4,31 +4,27 @@ import styled, { keyframes } from "styled-components"
 
 
 function Star(props) {
+
   const double = (n) => {
-    
-    return !(n % 2) ? -n:n;
+
+    return !(n % 2) ? -n : n;
   }
 
   const doubleA = (n) => {
-    
-    return !(n % 2) ? -n + 15:n - 15;
+
+    return !(n % 2) ? -n + 15 : n - 15;
   }
 
-  const star = keyframes`
-  
-
-  0% {left:${doubleA(props.left)}%; top:${props.top - 10}%; transform:rotate(360deg); opacity:0.5}
-  50% {left:${doubleA(props.left)}%; top:${props.top - 5}%; transform:rotate(360deg); opacity:0.6}
-  100% {left:props.left}%; top:${props.top }%; transform:rotate(0deg); opacity:1}
-
-  
+  const animation = keyframes`
+    0% {left:${doubleA(props.left)}%; top:${props.top - 10}%; transform:rotate(360deg); opacity:0.5}
+    50% {left:${doubleA(props.left)}%; top:${props.top - 5}%; transform:rotate(360deg); opacity:0.6}
+    100% {left:props.left}%; top:${props.top}%; transform:rotate(0deg); opacity:1}
   `;
   const Svg = styled.svg`
-  left :${double(props.left)}%;
-  top :${props.top}%;
-  animation:${star} 15s infinite linear;
-  animation-delay: ${props.delay / 100}s;
-
+    left :${double(props.left)}%;
+    top :${props.top}%;
+    animation:${animation} 15s infinite linear;
+    animation-delay: ${props.delay / 100}s;
   `;
   return (
     <Svg

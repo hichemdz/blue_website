@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Bar, Close } from '../icons'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-scroll'
 const NavLink = ({ Icon, name , link=name }) => {
     return (
         <li>
@@ -8,7 +8,7 @@ const NavLink = ({ Icon, name , link=name }) => {
                  activeClass="text-blue-450" 
                  to={link.toLowerCase()}
                  spy={true} 
-                 smooth={true} 
+                 smooth={true}
                  offset={0} 
                  duration={1000} 
                  className='cursor-pointer capitalize transition-all font-medium text-sm hover:text-blue-400 text-white' 

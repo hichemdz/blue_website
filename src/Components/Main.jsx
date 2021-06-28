@@ -39,7 +39,7 @@ const Main = () => {
                 </p>
                 <Link 
                  to='contact'
-                 smooth={100} 
+                 smooth={true} 
                  className='cursor-pointer inline-block transition-all duration-200 text-blue-450 border border-transparent hover:border-blue-450 px-5 py-2 rounded'>contact</Link>
             </div>
 
