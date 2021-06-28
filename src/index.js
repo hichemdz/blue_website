@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import "./css/slick.css"; 
+import "./css/slick-theme.css";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
