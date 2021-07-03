@@ -11,10 +11,7 @@ function App() {
   const src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102564.42831147094!2d2.842755647707574!3d36.5507761186765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128f0ac7bf5ccf6d%3A0x1be33bac7d1c266c!2z2YjYp9ivINin2YTYudmE2KfZitqo!5e0!3m2!1sar!2sdz!4v1624828826051!5m2!1sar!2sdz'
 
   useEffect(() => {
-  
-
     scrollSpy.update();
-
 
   }, [])
 
@@ -35,8 +32,6 @@ function App() {
         testimonial,
         contact,
         footer,
-
-
       }}>
       <div className='bg-blue-950 font-RobotoM'>
         <Main />

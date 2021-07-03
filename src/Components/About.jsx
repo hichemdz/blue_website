@@ -55,7 +55,7 @@ const Right = ({ img, setShow }) => {
         <div className='flex justify-center md:justify-end '>
             <div className='relative border-2 border-white w-full max-w-md h-96 '>
                 <div
-                    className='flex items-center justify-center right-10 top-10 absolute w-full h-full '
+                    className='flex items-center justify-center right-0 top-0 md:right-10 md:top-10 absolute w-full h-full '
                     style={{ background: `url(${img}) no-repeat center` }}>
                     <button onClick={() => setShow(true)}>
                         <Play className='w-8 h-8 ' />

@@ -39,7 +39,7 @@ function Header({ logo, className }) {
                     <ul className='hidden  md:flex items-center space-x-5'>
                         <NavLink name='home' />
                         <NavLink name='Services' />
-                        <NavLink name='Skils' />
+                        <NavLink name='Skills' />
                         <NavLink name='about us' link='about' />
                         <NavLink name='portfolio' />
                         <NavLink name='contact us' link='contact' />
